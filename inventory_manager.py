@@ -1,9 +1,35 @@
+from file_handler import load_data, save_data
+
+
 class InventoryManager:
     def __init__(self):
-        self.products = []
+        self.products = load_data()
 
     def add_product(self, product):
         self.products.append(product)
+        save_data(self.products)
 
     def get_all_products(self):
         return self.products
+
+    def delete_product(self, product_id):
+        for product in self.products:
+            if product["id"] == product_id:
+                self.products.remove(product)
+                save_data(self.products)
+                return True
+        return False
+
+    def find_product(self, product_id):
+        for product in self.products:
+            if product["id"] == product_id:
+                return product
+        return None
+
+    def update_product(self, product_id, updated_product):
+        for index, product in enumerate(self.products):
+            if product["id"] == product_id:
+                self.products[index] = updated_product
+                save_data(self.products)
+                return True
+        return False
