@@ -1,1 +1,72 @@
-
+[
+    {
+        "id": "P001",
+        "name": "Apple",
+        "category": "Fruit",
+        "price": 1.50,
+        "quantity": 50
+    },
+    {
+        "id": "P002",
+        "name": "Milk",
+        "category": "Dairy",
+        "price": 2.20,
+        "quantity": 15
+    },
+    {
+        "id": "P003",
+        "name": "Bread",
+        "category": "Bakery",
+        "price": 1.80,
+        "quantity": 8
+    },
+    {
+        "id": "P004",
+        "name": "Eggs",
+        "category": "Dairy",
+        "price": 3.50,
+        "quantity": 30
+    },
+    {
+        "id": "P005",
+        "name": "Orange Juice",
+        "category": "Drinks",
+        "price": 2.99,
+        "quantity": 12
+    },
+    {
+        "id": "P006",
+        "name": "Chocolate",
+        "category": "Snacks",
+        "price": 1.25,
+        "quantity": 40
+    },
+    {
+        "id": "P007",
+        "name": "Rice",
+        "category": "Grains",
+        "price": 12.99,
+        "quantity": 5
+    },
+    {
+        "id": "P008",
+        "name": "Chicken Breast",
+        "category": "Meat",
+        "price": 6.99,
+        "quantity": 18
+    },
+    {
+        "id": "P009",
+        "name": "Coffee",
+        "category": "Drinks",
+        "price": 8.50,
+        "quantity": 9
+    },
+    {
+        "id": "P010",
+        "name": "Banana",
+        "category": "Fruit",
+        "price": 0.99,
+        "quantity": 60
+    }
+]
