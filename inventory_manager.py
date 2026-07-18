@@ -6,8 +6,13 @@ class InventoryManager:
         self.products = load_data()
 
     def add_product(self, product):
+        # Check for duplicate product ID
+        if self.find_product(product["id"]) is not None:
+            return False
+
         self.products.append(product)
         save_data(self.products)
+        return True
 
     def get_all_products(self):
         return self.products
@@ -33,3 +38,13 @@ class InventoryManager:
                 save_data(self.products)
                 return True
         return False
+
+    def get_low_stock(self, limit=5):
+        """
+        Return all products with stock less than or equal to limit.
+        """
+        return [
+            product
+            for product in self.products
+            if product["quantity"] <= limit
+        ]
