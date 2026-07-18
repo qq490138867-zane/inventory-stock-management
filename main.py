@@ -81,6 +81,21 @@ while True:
         else:
             print("❌ Product not found.")
 
+    elif choice == "6":
+        low_stock = manager.get_low_stock()
+
+        if not low_stock:
+            print("All products have sufficient stock.")
+        else:
+            print("\nLow Stock Report")
+            print("-" * 40)
+
+            for product in low_stock:
+                print(f"ID: {product['id']}")
+                print(f"Name: {product['name']}")
+                print(f"Quantity: {product['quantity']}")
+                print("-" * 40)
+                
     elif choice == "7":
         print("Goodbye!")
         break
