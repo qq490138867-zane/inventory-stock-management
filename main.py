@@ -37,6 +37,22 @@ while True:
 
             for product in products:
                 print(product)
+                
+    elif choice == "3":
+    product_id = input("Enter Product ID to search: ")
+
+    product = manager.find_product(product_id)
+
+    if product:
+        print("\nProduct Found")
+        print("-" * 40)
+        print(f"ID: {product['id']}")
+        print(f"Name: {product['name']}")
+        print(f"Category: {product['category']}")
+        print(f"Price: £{product['price']}")
+        print(f"Quantity: {product['quantity']}")
+    else:
+        print("❌ Product not found.")
 
     elif choice == "5":
         product_id = input("Enter Product ID to delete: ")
