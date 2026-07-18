@@ -54,6 +54,25 @@ while True:
         else:
             print("❌ Product not found.")
 
+    elif choice == "4":
+        product_id = input("Enter Product ID to update: ")
+
+        product = manager.find_product(product_id)
+
+        if product is None:
+            print("❌ Product not found.")
+        else:
+            updated_product = {
+                "id": product["id"],  # Keep the same ID
+                "name": input(f"New Name ({product['name']}): ") or product["name"],
+                "category": input(f"New Category ({product['category']}): ") or product["category"],
+                "price": float(input(f"New Price ({product['price']}): ") or product["price"]),
+                "quantity": int(input(f"New Quantity ({product['quantity']}): ") or product["quantity"])
+            }
+
+            manager.update_product(product_id, updated_product)
+            print("✅ Product updated successfully!")
+
     elif choice == "5":
         product_id = input("Enter Product ID to delete: ")
 
