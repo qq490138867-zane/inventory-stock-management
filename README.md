@@ -42,6 +42,8 @@ inventory-stock-management/
 ├── inventory_manager.py
 ├── search_sort.py
 ├── charts.py
+├── gui.py
+├── utils.py
 ├── main.py
 ├── requirements.txt
 └── README.md
