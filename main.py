@@ -6,8 +6,11 @@ while True:
     print("\n===== Inventory Management System =====")
     print("1. Add Product")
     print("2. View Products")
-    print("3. Delete Product")
-    print("4. Exit")
+    print("3. Search Product")
+    print("4. Update Product")
+    print("5. Delete Product")
+    print("6. Low Stock Report")
+    print("7. Exit")
 
     choice = input("Choose an option: ")
 
@@ -35,7 +38,7 @@ while True:
             for product in products:
                 print(product)
 
-    elif choice == "3":
+    elif choice == "5":
         product_id = input("Enter Product ID to delete: ")
 
         if manager.delete_product(product_id):
@@ -43,7 +46,7 @@ while True:
         else:
             print("❌ Product not found.")
 
-    elif choice == "4":
+    elif choice == "7":
         print("Goodbye!")
         break
 
