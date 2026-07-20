@@ -2,14 +2,15 @@
 
 ## Project Overview
 
-This project is a Python-based Inventory Stock Management System developed for the IY499 Introduction to Programming module.
+This project is a Python-based Inventory Stock Management System developed for the IY499 Introduction to Programming module at the University of York.
 
-The system allows users to manage products through a simple command-line interface. Data is stored in a JSON file so that the inventory is saved between program executions.
+The system allows users to manage inventory through a simple command-line interface. It demonstrates object-oriented programming, modular programming, file handling, searching and sorting algorithms, data validation, error handling, and data visualisation. All inventory data is stored in a JSON file, allowing information to be automatically saved and loaded between program executions.
 
-The project demonstrates object-oriented programming, modular programming, file handling, searching, sorting, data validation and data visualisation.
+## GitHub Repository
 
+The source code for this project is available at:
 
----
+https://github.com/qq490138867-zane/inventory-stock-management
 
 ## Features
 
@@ -18,17 +19,14 @@ The project demonstrates object-oriented programming, modular programming, file 
 - Search products by ID or name
 - Update existing products
 - Delete products
-- Low stock report
+- Generate a low stock report
 - Sort products by:
   - Name
   - Price
   - Quantity
-- Inventory stock bar chart
+- Display an inventory stock bar chart
 - Automatic JSON data saving
 - Input validation and error handling
-
-
----
 
 ## Project Structure
 
@@ -37,7 +35,6 @@ inventory-stock-management/
 │
 ├── data/
 │   └── inventory.json
-│
 ├── file_handler.py
 ├── inventory_manager.py
 ├── search_sort.py
@@ -47,51 +44,41 @@ inventory-stock-management/
 └── README.md
 ```
 
----
-
 ## Technologies Used
 
 - Python 3
 - JSON
 - Matplotlib
 
----
-
 ## Installation
 
 Install the required package:
 
-```bash
+```
 pip install -r requirements.txt
 ```
-
----
 
 ## Running the Program
 
 Run the program using:
 
-```bash
+```
 python main.py
 ```
-
----
 
 ## Program Functions
 
 The system supports the following operations:
 
-1. Add Product
-2. View Products
-3. Search Product
-4. Update Product
-5. Delete Product
-6. Low Stock Report
-7. Sort Products
-8. Stock Chart
-9. Exit
-
----
+- Add Product
+- View Products
+- Search Product
+- Update Product
+- Delete Product
+- Low Stock Report
+- Sort Products
+- Stock Chart
+- Exit
 
 ## Data Storage
 
@@ -103,8 +90,6 @@ data/inventory.json
 
 Changes are automatically saved whenever products are added, updated or deleted.
 
----
-
 ## Future Improvements
 
 Possible future improvements include:
@@ -113,14 +98,18 @@ Possible future improvements include:
 - Database support
 - User authentication
 - Export inventory reports
-- More advanced search filters
-
----
+- Advanced search and filtering options
 
 ## Author
 
-Qian Cao
+**Name:** Qian Cao
 
-University of York
+**P-Number:** P303070378
 
-Module: IY499 Introduction to Programming
+**Module:** IY499 Introduction to Programming
+
+## Academic Integrity
+
+I confirm that this assignment is my own work.
+
+Where I have referred to online sources, I have provided comments detailing the reference and included a link to the source.
